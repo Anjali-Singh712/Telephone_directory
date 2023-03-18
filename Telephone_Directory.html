@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var i,f,phone;
+        function getnumber(f)
+        {
+            phone = new Array(7541943164, 7367052600, 8825244026, 7367050630, 8757731451, 7903789532,9334986163,9340556208);
+            i = f.nameBox.selectedIndex;
+            f.PhoneNumber.value = phone[i]
+        }
+    </script>
+    <form name = "telephone form">
+        <pre>
+            <center>
+                <hr>
+                <h1>TELEPHONE  DIRECTORY <br></h1>
+                <HR>
+                    <H2>Select the name and press the button below to get the telephone number <br></H2>
+                    NAME : <select name="nameBox">
+                        <option>Anjali</option>
+                        <option>Ishita</option>
+                        <option>Mayank</option>
+                        <option>Shiv</option>
+                        <option>Maa</option>
+                        <option>Avi</option>
+                        <option>Amarjeet</option>
+                        <option>Abhijeet</option>
+                    </select>
+                    PHONE NUMBER: <input type="text" name="PhoneNumber"> <br>
+                    <input type="button" value = "getnumber" onclick="getnumber(this.form)">
+                    <br>
+                    <hr>
+            </center>
+        </pre>
+    </form>
+</body>
+
+</html>
